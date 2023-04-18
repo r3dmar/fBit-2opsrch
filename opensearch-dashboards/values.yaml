@@ -5,7 +5,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-opensearchHosts: "https://opensearch-cluster-master.opensearch-b:9200"
+opensearchHosts: "https://opensearch-cluster-master.opensearch-a:9200"
 
 replicaCount: 1
 
@@ -185,10 +185,10 @@ ingress:
 
 resources:
   requests:
-    cpu: "100m"
+    cpu: "300m"
     memory: "512M"
   limits:
-    cpu: "100m"
+    cpu: "300m"
     memory: "512M"
 
 autoscaling:
